@@ -46,6 +46,7 @@ class BasePage:
             assert value in response, f'Ожидаемого {value} не оказалось в {response}'
 
         @staticmethod
+        @step('Проверка наличия приложенного вложения')
         def element_is_visible(locator=None):
             try:
                 locator.is_displayed()

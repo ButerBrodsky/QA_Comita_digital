@@ -25,17 +25,17 @@ def test_mail_server(browser, env):
     # exception button here. Проблема теста кроется здесь. Гугл возвращает ошибку с подозрением на безопасность
 
     # here code to accept mail by smartphone. Гугл просит подтвердить действия с мобильного телефона. Я думаю, из-за
-    # Отсутствия полной тестовой инфраструктуры - тест обречен на провал. Дальнейшие действия я писал, если бы это
-    # используя свою Личную УЗ, я ее не могу предоставить в ТЗ, к сожалению.
+    # Отсутствия полной тестовой инфраструктуры - тест обречен на провал. Дальнейшие действия я писал, используя
+    # свою Личную УЗ, я ее не могу предоставить в ТЗ, к сожалению.
 
-    with allure.step("Отправка письма"):
+    with allure.step("Заполнение необходимых полей"):
         consumers_list = [env.consumer_1_real, env.consumer_2_fake]
         mail_steps.input_mails_of_consumers(list_of_mails=consumers_list)
         mail_steps.input_subject(payload=SUBJ_PAYLOAD)
         mail_steps.input_letter_text(payload=LETTER_TEXT_PAYLOAD)
         mail_steps.send_attachment()
         mail_steps.assertions.element_is_visible(mail_steps.get_attached_element())
-        mail_steps.send_the_letter_finally()
+    mail_steps.send_the_letter_finally()
 
     with allure.step("Проверка успешности отправки писем"):
         mail_steps.try_to_find_alert_about_failed_send(mail=env.consumer_1_real)
