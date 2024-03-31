@@ -1,31 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a45705-a942-41bc-b141-a9f0a8869dda" name="Changes" comment="" />
+    <list default="true" id="82a45705-a942-41bc-b141-a9f0a8869dda" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.MD" beforeDir="false" afterPath="$PROJECT_DIR$/readme.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/Base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/MailPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/MailPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/api_client_[DEPRECATED].py" beforeDir="false" afterPath="$PROJECT_DIR$/software/api_client_[DEPRECATED].py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/test_mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/test_mail.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2eOvV40pG2aJsQKW9A5RboHRWKc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests for test_mail.test_mail_server.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ButerBrodsky\PycharmProjects\QA_Comita_digital" />
+      <recent name="C:\Users\ButerBrodsky\PycharmProjects\QA_Comita_digital\software\artifacts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Python tests for test_mail.test_mail_server" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QA_Comita_digital" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/software" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_mail.test_mail_server&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_mail.test_mail_server" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -43,5 +105,20 @@
       <updated>1711788458183</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="mail_steps.enter_the_mail_login(login='test_comita@mail.ru')" language="Python" />
+        <watch expression="self.find_element(MailPageLocators.LOCATOR_LOGIN_INPUT_AREA).send_keys('test_comita@mail.ru')" language="Python" />
+        <watch expression="browser.find_element(By.XPATH, '//input[@placeholder=&quot;Имя аккаунта&quot;]').send_keys('jopa')" language="Python" />
+        <watch expression="browser.find_element(By.XPATH, '//input[@placeholder=&quot;Имя аккаунта&quot;]').send_keys('jopa')" language="Python" />
+        <watch expression="browser.find_element(By.XPATH, '//input[@placeholder=&quot;Имя аккаунта&quot;]').send_keys('jopa')" language="Python" />
+        <watch expression="browser.find_element(By.XPATH, '//input[@placeholder=&quot;Имя аккаунта&quot;]').send_keys('jopa')" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
