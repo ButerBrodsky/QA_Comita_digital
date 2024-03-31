@@ -98,5 +98,5 @@ class MailPageActions(BasePage):
             except NoSuchElementException:
                 print("Уведомление не было найдено")
                 time.sleep(2)  # т.к. соединение может быть неустойчивым, ожидание приходится делать явным
-        print("Уведомлений о неудачной отправке нет")
+        print("Письмо дошло успешно")
         return None
