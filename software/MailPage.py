@@ -3,7 +3,6 @@ from selenium.common import NoSuchElementException, ElementNotInteractableExcept
 from selenium.webdriver.common.by import By
 from Base import BasePage
 from allure import step
-from config import Env
 import time
 
 
